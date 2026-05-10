@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        body{
+
+            background-image: url("fundal_camp.png");
+
+            object-fit: cover;
+
+            background-repeat: no-repeat;
+
+            background-size: cover;
+
+        }
+
+        .textbox{
+
+            width:   10dvw;
+
+            height: 5dvh;
+
+            border-radius: 5px;
+
+            border: none;
+
+            text-align: center;
+
+            margin-left: 40dvw;
+
+        }
+
+        .buton{
+
+            width: 10dvw;
+
+            height: 5dvh;
+
+            border-radius: 5px;
+
+            border: none;
+
+            background-color: #4CAF50;
+
+            color: white;
+
+            cursor: pointer;
+
+            margin-top: 5dvh;
+
+        }
+
+.main{
+    display: grid;
+    grid-template-rows: 50%;
+    margin-top: 37.5dvh; /* Change from 15dvh to a larger value */
+}
+.flori{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25dvh;
+    gap: 5px; /* Adjust this value: 0px for no space, 2px for tiny space, etc. */
+}
+
+.flori img {
+    margin: 0 -50px; /* Optional: use negative margin to make them overlap */
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main" id="main">
+
+        <div class="flori" id="flori">
+
+        </div>
+
+    </div>
+
+    <input type="text" class="textbox" placeholder="Nume" id="textbox">
+
+    <button class="buton" onclick="fct()">Afiseaza</button>
+
+    <script>
+
+       function fct(){
+    var nume = document.querySelector(".textbox").value;
+    let caractere=[...nume];
+    document.getElementById("flori").innerHTML="";
+    
+    for(let i=0;i<caractere.length;i++){
+        if(caractere[i]=='a'){document.getElementById("flori").innerHTML+=`<img src="A lalele.png" style="height: 30dvh;">`}
+        if(caractere[i]=='b'){document.getElementById("flori").innerHTML+=`<img src="Branduse (B).png" style="height: 15dvh;">`}
+        if(caractere[i]=='c'){document.getElementById("flori").innerHTML+=`<img src="Crizanteme (C).png" style="height: 15dvh;">`}
+        if(caractere[i]=='d'){document.getElementById("flori").innerHTML+=`<img src="Dalii (D).png" style="height: 15dvh;">`}
+        if(caractere[i]=='e'){document.getElementById("flori").innerHTML+=`<img src="Eustoma (E).png" style="height: 15dvh;">`}
+        if(caractere[i]=='f'){document.getElementById("flori").innerHTML+=`<img src="Frezii (F).png" style="height: 25dvh;">`}
+        if(caractere[i]=='g'){document.getElementById("flori").innerHTML+=`<img src="Ghiocei (G).png" style="height: 25dvh;">`}
+        if(caractere[i]=='h'){document.getElementById("flori").innerHTML+=`<img src="Hortensii (H).png" style="height: 25dvh;">`}
+        if(caractere[i]=='i'){document.getElementById("flori").innerHTML+=`<img src="I Crini.png" style="height: 30dvh;">`}
+        if(caractere[i]=='j'){document.getElementById("flori").innerHTML+=`<img src="Jales (J).png" style="height: 30dvh;">`}
+        if(caractere[i]=='k'){document.getElementById("flori").innerHTML+=`<img src="Kalanchoe (K).png" style="height: 30dvh;">`}
+        if(caractere[i]=='l'){document.getElementById("flori").innerHTML+=`<img src="L trandafiri.png" style="height: 30dvh;">`}
+        if(caractere[i]=='m'){document.getElementById("flori").innerHTML+=`<img src="Maci (M).png" style="height: 30dvh;">`}
+        if(caractere[i]=='n'){document.getElementById("flori").innerHTML+=`<img src="N bujori.png" style="height: 30dvh;">`}
+        if(caractere[i]=='o'){document.getElementById("flori").innerHTML+=`<img src="Orhidei (O).png" style="height: 30dvh;">`}
+        if(caractere[i]=='p'){document.getElementById("flori").innerHTML+=`<img src="Panselute (P).png" style="height: 30dvh;">`}
+        if(caractere[i]=='q'){document.getElementById("flori").innerHTML+=`<img src="Quanoclit (Q).png" style="height: 30dvh;">`}
+        if(caractere[i]=='r'){document.getElementById("flori").innerHTML+=`<img src="Ramunculus (R).png" style="height: 35dvh;">`}
+        if(caractere[i]=='s'){document.getElementById("flori").innerHTML+=`<img src="Sanziene (S).png" style="height: 35dvh;">`}
+        if(caractere[i]=='t'){document.getElementById("flori").innerHTML+=`<img src="Tuberoza (T).png" style="height: 35dvh;">`}
+        if(caractere[i]=='u'){document.getElementById("flori").innerHTML+=`<img src="U albastrele.png" style="height: 35dvh;">`}
+        if(caractere[i]=='v'){document.getElementById("flori").innerHTML+=`<img src="Violete (V).png" style="height: 35dvh;">`}
+        if(caractere[i]=='w'){document.getElementById("flori").innerHTML+=`<img src="W lavanda.png" style="height: 35dvh;">`}
+        if(caractere[i]=='x'){document.getElementById("flori").innerHTML+=`<img src="X iris.png" style="height: 35dvh;">`}
+        if(caractere[i]=='y'){document.getElementById("flori").innerHTML+=`<img src="Y.png" style="height: 35dvh;">`}
+        if(caractere[i]=='z'){document.getElementById("flori").innerHTML+=`<img src="Zambile (z).png" style="height: 35dvh;">`}
+    }
+}
+
+    </script>
+
+</body>
+
+</html>
+
