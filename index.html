@@ -98,6 +98,11 @@
 
        function fct(){
     var nume = document.querySelector(".textbox").value;
+    if(nume=="dracusor"){ 
+        alert("Vrei sa fi iubita mea? :3"); 
+        document.getElementById("flori").innerHTML=`<img src="poza.png" style="height: 30dvh;"> <br> Te roooog`;
+    }
+    else{
     let caractere=[...nume];
     document.getElementById("flori").innerHTML="";
     
@@ -130,7 +135,7 @@
         if(caractere[i]=='z'){document.getElementById("flori").innerHTML+=`<img src="Zambile (z).png" style="height: 35dvh;">`}
     }
 }
-
+       }
     </script>
 
 </body>
